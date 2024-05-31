@@ -22,6 +22,8 @@ SELECT ?o WHERE
   ?s golem:title ?o .
 }
 ```
+
+```
 PREFIX golem: <https://golemlab.eu/graph/>
 SELECT (COUNT(?s) as ?sCount) WHERE {
 	?s golem:fandom "Star Trek: Voyager" .
