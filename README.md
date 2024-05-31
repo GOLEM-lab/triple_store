@@ -32,7 +32,6 @@ PREFIX golem: <https://golemlab.eu/graph/>
 SELECT (COUNT(?s) as ?sCount) WHERE {
 	?s golem:fandom "Star Trek: Voyager" .
 	?s golem:socialRelationships ?rel .
-   	FILTER(CONTAINS(?rel, 'Janeway')||
-	CONTAINS(?rel, 'Kathryn') )
+   	FILTER(CONTAINS(?rel, 'Janeway')||CONTAINS(?rel, 'Kathryn') )
 }
 ```
